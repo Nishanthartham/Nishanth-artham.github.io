@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.shadow{
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+    border-radius: 15px;
+}
+#background{
+    /* background:  url(./images/pexels-s-migaj-747964.jpeg); */
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.image {
+    width:100%;
+    height:500px;
+    background-image:url(http://images6.fanpop.com/image/photos/33300000/Abstract-Space-space-33308889-1920-1200.jpg);
+    background-position:center; 
+  
+          }
+.navbar{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+}
+
+.logo{
+    width: 90px;
+    border: 4px solid #522719;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav_item{
+    display: flex;
+    align-items: center;
+}
+.nav_item li{
+    padding: 30px;
+    list-style: none;
+}
+.nav_item li a{
+    text-decoration: none;
+    color: black;
+    padding-top: 10px ;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+
+
+}
+.nav_item li a:hover{
+    /* border-top: 4px solid blue; */
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    box-shadow: -9px -9px 16px rgb(110, 74, 74),9px 9px 16px rgba(250, 250, 255, 0.6);
+
+}
+
+.main-content{
+    /* text-align: center; */
+    margin-top: 15vh;
+    /* background: -webkit-linear-gradient(rgb(209, 66, 66), rgb(71, 71, 71));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: 'Kalam', cursive;;
+    font-size: 40px;
+    font-style: bold;
+    color: blue;
+}
+.heading{
+    width: 40%;
+    height: 50vh;
+    display: inline-block;
+    margin-left: 5%;
+    position: relative;
+    bottom: 100px;
+}
+.header {
+    width: 0ch;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid orange;/* The typwriter cursor*/
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite; */
+      animation: text-slide  6s,
+      blink-caret  6s;
+  }
+  @keyframes text-slide{
+      0%{
+          width: 0ch;
+      }
+      40%{
+          width :28ch; 
+      }
+  }
+  /* The typing effect */
+  /* @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  } */
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: black }
+    50% { border-color: orange; }
+  }
+.web-dev-image{
+    width: 40%;
+    height: 50vh;
+    /* animation: up-down 2s ease-in-out infinite alternate-reverse both; */
+    border-radius: 15px;
+}
+.web-dev-image{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.header{
+    font-size: 60px;
+    display: inline-block;
+
+}
+.about{
+    /* text-align: center; */
+}
+.about-header{
+    font-size: 40px;
+    margin: 5px auto;
+    width: 70%;
+    color: #816244;
+}
+.about-data{
+    display: flex;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    width: 70%;
+    font-size: 20px;
+
+}
+.about-para{
+    margin-right: 10%;
+    font-size: unset;
+    color: #0e2923;
+}
+.profile-pic{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+#exp-blocks{
+    padding: 50px;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 65vh;
+    margin: 100px auto;
+    border-radius: 15px;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+    animation: appearance;
+    animation-duration: 1500ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+@keyframes appearance {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.exp-main-head{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.experience{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tag{
+    width: 25%;
+    height: 300px;
+    background-color: white;
+    border: 2px solid #a2a2a2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 20px;
+    overflow: scroll;
+}
+.tag:hover{
+    color: white;
+    background-color: black;
+}
+.tag-hover{
+    background-color: #522719;
+}
+.exp-image{
+    height: 70px;
+    width: 70px;
+}
+.exp-header{
+    padding-top: 26px;
+    padding-bottom: 10px;
+}
+.exp-para{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+  
+.experience ul li {
+    line-height: 1.5;
+    list-style-type: none!important;
+  }
+.experience-2{
+    background-color: yellow;
+}
+.zummit .exp-header{
+    width: 75%;
+}  
+
+.edspread .exp-header{
+    width: 77%;
+}  
+.zummit .exp-image{
+    margin-top: 185px;
+}
+.edspread .exp-image{
+    margin-top: 110px;
+}
+#certifications{
+    text-align: center;
+    padding-top: 50px;
+    background-color: whitesmoke;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+}
+.certi-box{
+    padding: 60px;
+    justify-content: space-between;
+    display: flex;
+}
+.if1{
+    width: 25%;
+    height:50vh;
+    background-color: whitesmoke;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+    border-radius: 15px;
+    display: inline-block;
+    
+    
+}
+.if2{
+    
+    background-color: whitesmoke;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+    width: 69%;
+    height: 80vh;
+}
+.certi-head{
+    font-size: 2em;
+}
+.slideshow{
+    position:relative;
+    margin: 0 0px;
+    padding-top:50px;
+    height:700px;
+    box-sizing:border-box;
+    }
+    
+    .content{
+    margin:auto;
+    width:250px;
+    perspective:1000px;
+    position:relative;
+    padding-top:80px;
+    }
+.content-carrousel{
+    width:100%;
+    position:absolute;
+    float:right;
+    animation:rotor 15s infinite linear;
+    transform-style:preserve-3d;
+    }
+    .content-carrousel:hover{
+        animation-play-state:paused;
+        cursor:pointer;
+        }
+        .content-carrousel figure{
+        width:60%;
+        margin-left:60px;
+        position:fixed;
+        height:120px;
+        border:1px solid #4d444d;
+        overflow:hidden;
+        position:absolute;
+        }
+        .content-carrousel figure:nth-child(1){
+        transform:rotateY(0deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(2){
+        transform:rotateY(45deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-chibld(3){
+        transform:rotateY(90deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(4){
+        transform:rotateY(135deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(5){
+        transform:rotateY(180deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(6){
+        transform:rotateY(225deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(7){
+        transform:rotateY(270deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(8){
+        transform:rotateY(315deg) translateZ(300px);
+        }
+        .shadow{
+        position:absolute;
+        box-shadow:0  10px 10px 10px black;
+        border-radius:2px;
+        }
+        .content-carrousel img{
+        image-rendering:auto;
+        transition:all 300ms;
+        width:100%;
+        height:100%;
+        }
+        .content-carrousel img:hover{
+        transform:scale(1.2);
+        transition:all 300ms;
+        }
+        @keyframes rotor{
+            from{
+                transform:rotateY(0deg);
+            } to{
+                transform:rotateY(360deg);
+            }
+        }
