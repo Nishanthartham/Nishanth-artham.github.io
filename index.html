@@ -22,25 +22,29 @@
     $('.image').ripples('show');
     });
     </script> -->
-     <div id="background">
-         <div class="navbar">
-             <img src="images/Screenshot_20220310-110858__01.jpeg" alt="LOGO" class="logo">
-            <ul class="nav_item">
-                <li ><a href="#background">Home</a></li>
-                <li><a href="#exp-blocks">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-            </ul>
-        </div>
-        <section class="main-content">
-            
-            <div class="heading">
-                <h1 class="header">Hello, I am <br> Nishanth artham</h1>
+    <section style="max-height: 100%; margin: auto;">
+        <div id="ripple" style="height: 50rem; background: url('./images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpeg') left top / cover;">
+           <div id="background">
+               <nav class="navbar">
+                   <img src="images/Screenshot_20220310-110858__01.jpeg" alt="LOGO" class="logo">
+                   <ul class="nav_item">
+                       <li ><a href="#background">Home</a></li>
+                       <li><a href="#exp-blocks">Experience</a></li>
+                       <li><a href="#certifications">Certifications</a></li>
+                       <li><a href="#slideshow">Skills</a></li>
+                       <!-- <li><a href="">Projects</a></li> -->
+                    </ul>
+                </nav>
+                <section class="main-content">
+                    
+                    <div class="heading">
+                        <h1 class="header">Hello, I am <br> Nishanth artham</h1>
+                    </div>
+                    <img class= "web-dev-image" src="images/How-to-Hire-Web-Developer.gif" alt="web-dev-image">
+                </section>
             </div>
-            <img class= "web-dev-image" src="images/How-to-Hire-Web-Developer.gif" alt="web-dev-image">
-         </section>
         </div>
+    </section>
         <!-- </div> -->
         <section class="about">
             <h1 class="about-header">About Me</h1>
@@ -50,7 +54,7 @@
                 exploring my capabilities. I am comfortable with web development and GUI 
                 (Graphical User Interface) using Python. I worked on my mini-project,
                  which helped me to examine and enhance my skills in Python as well as in 
-                 Web-development.</p>
+                 Web-development. <br><a href="./images/Nishanth Artham.pdf">Link to my resume</a></p>
                  <img src="./images/Screenshot_20220310-110858__01.jpeg"class = "profile-pic" alt="">
                 </div>
         </section>
@@ -96,7 +100,8 @@
                 <iframe src="" frameborder="0" class="if2" name ="if2_name"></iframe>
                 </div>
             </section>
-            <section class="slideshow">
+            <section id="slideshow">
+                <h1 class="exp-main-head skills-head">Skills</h1>
                 <div class="content">
                     <div class="content-carrousel">
                         <figure class="shadow"><img src="./images/js.png"></figure>
@@ -110,6 +115,19 @@
                     </div>
                 </div>
             </section>
+            <footer class="footer">
+                <div class="wave connect">Connect With Me</div>
+                <div class="social-media">
+                    <div class="smbtn"><a class = "wave" href="./images/Nishanth Artham.pdf">My Resume</a></div>
+                    <div class="smbtn"><a class = "wave" href="https://www.linkedin.com/in/nishanth-artham-1a572b212/">Linkedin</a></div>
+                </div>
+                <p>Made with &#x2764; by Nishanth Artham</p>
+            </footer>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+<script src='https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js'></script>
+
+<script  src="./script.js"></script>
  </body>
  <script>
 //  $(document).ready(function(){
@@ -119,7 +137,11 @@
 //         });})
      function changeclass(){
          console.log('dlkjf');
-         document.getElementsByClassName('tag').changeclass = 'tag-hover' ;
+         var tag = document.getElementsByClassName('tag');
+         console.log(tag.classList);
+        //  tag.classList.add("tag-hover");
+        //  tag.classList.remove('tag');
+        //  document.getElementsByClassName('tag').changeclass = 'tag-hover' ;
 
     };
     </script>

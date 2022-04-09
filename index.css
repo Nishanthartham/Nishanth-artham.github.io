@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 .shadow{
     box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
@@ -28,6 +29,7 @@
     justify-content: space-between;
     top: 0;
     position: sticky;
+    top: 0;
 }
 
 .logo{
@@ -143,6 +145,7 @@
 }
 .about{
     /* text-align: center; */
+    margin-top: 100px;
 }
 .about-header{
     font-size: 40px;
@@ -288,12 +291,17 @@
 .certi-head{
     font-size: 2em;
 }
-.slideshow{
+#slideshow{
     position:relative;
-    margin: 0 0px;
+    margin: 100px auto;
     padding-top:50px;
     height:700px;
     box-sizing:border-box;
+    width: 80%;
+    height: 70vh;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
+    border-radius: 15px;
+    background-color: whitesmoke;
     }
     
     .content{
@@ -369,3 +377,77 @@
                 transform:rotateY(360deg);
             }
         }
+.skills-head{
+    font-size:2em;
+}
+/* .footer{
+    background-color: black;
+    
+    
+} */
+footer {
+    background: #001224;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-media{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.smbtn{
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #697499;
+    font-size: 1.25rem;
+}
+
+.connect{
+font-size: 3em;
+font-weight: bold;
+font-family: sans-serif;}
+.wave {
+
+    text-decoration: none;
+    color: transparent;
+    background: url("https://wweb.dev/resources/creative-hover-effects/wave.svg") repeat-x #fff;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip:text;
+    background-size: 200% 100%;
+    background-position-x: 0;
+    background-position-y: 2em;
+    -webkit-transition: background-position-y 0.6s ease;
+    transition: background-position-y 0.6s ease;
+    -webkit-animation: waveAnimation 4s infinite linear;
+    animation: waveAnimation 4s infinite linear;
+    animation-play-state: running;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+  
+.wave:hover {
+    background-position-x: 0;
+    background-position-y: 0;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+  }
+  
+  @keyframes waveAnimation{
+    from {
+      background-position-x: 0%;
+    }
+    to {
+      background-position-x: 200%;
+    }
+  }
+footer p{
+    color :#5b5b45;
+}
