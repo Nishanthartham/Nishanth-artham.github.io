@@ -98,8 +98,9 @@
     /* animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite; */
-      animation: text-slide  6s,
-      blink-caret  6s;
+      animation: text-slide  6s infinite,
+      blink-caret  6s infinite;
+
   }
   @keyframes text-slide{
       0%{
@@ -411,7 +412,6 @@ font-size: 3em;
 font-weight: bold;
 font-family: sans-serif;}
 .wave {
-
     text-decoration: none;
     color: transparent;
     background: url("https://wweb.dev/resources/creative-hover-effects/wave.svg") repeat-x #fff;
