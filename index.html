@@ -12,19 +12,9 @@
 <link rel="shortcut icon" href="./images/favicon_io/favicon.ico" type="image/x-icon"> 
 </head>
  <body>
-     <!-- <div class="image">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js">
-        </script>
-
-        <script>
-            $(document).ready(function() {
-    $('.image').ripples('show');
-    });
-    </script> -->
+ 
     <section style="max-height: 100%; margin: auto;">
-        <div id="ripple" style="height: 50rem; background: url('./images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpeg') left top / cover;">
+        <div id="ripple" style="height: 60rem; background: url('./images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpeg') left top / cover;">
            <div id="background">
                <nav class="navbar">
                    <img src="images/Screenshot_20220310-110858__01.jpeg" alt="LOGO" class="logo">
@@ -33,8 +23,10 @@
                        <li><a href="#exp-blocks">Experience</a></li>
                        <li><a href="#certifications">Certifications</a></li>
                        <li><a href="#slideshow">Skills</a></li>
+                       <!-- <li><img class = "menu-icon" src="./images/menu.png" alt="menu-icon"></li> -->
                        <!-- <li><a href="">Projects</a></li> -->
                     </ul>
+                    <img class = "menu-icon" src="./images/menu.png" alt="menu-icon">
                 </nav>
                 <section class="main-content">
                     
@@ -46,7 +38,6 @@
             </div>
         </div>
     </section>
-        <!-- </div> -->
         <section class="about">
             <h1 class="about-header">About Me</h1>
             <div class="about-data">
@@ -62,8 +53,8 @@
         <div id="exp-blocks">
             <h1 class="exp-main-head">Experience</h1>
             <section class="experience" >
-                <div class="IM tag"  onClick="changeclass()">
-                    <img src="./images/web-development.png" alt="web-dev-image" class="exp-image">
+                <div class="IM tag"  onmouseenter="changeclass1()" onmouseleave="Originalclass1()">
+                    <img id = "img1" src="./images/web-development.png" alt="web-dev-image" class="exp-image">
                     <h1 class="exp-header">DESIGN INTERN</h1>
                     <h2 class="exp-subheader">Interviews Master</h2>
                     <ul>
@@ -71,8 +62,8 @@
                         <li><p>&#x21D2; &nbsp;Worked on LearnWorlds Platform</p></li>
                     </ul>
                 </div>
-                <div class="zummit tag">
-                    <img src="./images/web-development.png" alt="web-dev-image" class="exp-image">
+                <div class="zummit tag"  onmouseenter="changeclass2()" onmouseleave="Originalclass2()">
+                    <img id = "img2" src="./images/web-development.png" alt="web-dev-image" class="exp-image">
                     <h1 class="exp-header">WEB DEVELOPER INTERN</h1>
                     <h2 class="exp-subheader">Zummit Infolabs</h2>
                     <ul>
@@ -83,8 +74,8 @@
                             <li><p>&#x21D2; &nbsp;Used PHP to fix backend bugs.</p></li>
                         </ul>
                     </div>
-                    <div class="edspread tag">
-                        <img src="./images/web-development.png" alt="web-dev-image" class="exp-image">
+                    <div class="edspread tag"  onmouseenter="changeclass3()" onmouseleave="Originalclass3()">
+                        <img id = "img3" src="./images/web-development.png" alt="web-dev-image" class="exp-image">
                         <h1 class="exp-header">CO-FOUNDER AND INSTRUCTOR</h1>
                         <h2 class="exp-subheader">EdSpread</h2>
                         <ul>
@@ -136,14 +127,11 @@
 //         $('.experience').removeClass().addClass('.experience-2')
 
 //         });})
-     function changeclass(){
-         console.log('dlkjf');
-         var tag = document.getElementsByClassName('tag');
-         console.log(tag.classList);
+
         //  tag.classList.add("tag-hover");
         //  tag.classList.remove('tag');
         //  document.getElementsByClassName('tag').changeclass = 'tag-hover' ;
 
-    };
+
     </script>
  </html>
