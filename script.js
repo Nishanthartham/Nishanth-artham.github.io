@@ -26,3 +26,7 @@ function changeclass3() {
 function Originalclass3() {
 	img3.src = "./images/web-development.png";
 }
+let menu = document.getElementById('menuicon');
+function menuicon(){
+	console.log(menu.style.display.value);
+}

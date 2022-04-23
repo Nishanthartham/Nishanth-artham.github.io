@@ -62,7 +62,7 @@
     /* border-top: 4px solid blue; */
     border: 3px solid white;
     border-radius: 15px;
-    background-color: black;
+    background-color: rgb(94, 91, 91);
     padding: 10px;
     color: white;
     box-shadow: -9px -9px 16px rgb(110, 74, 74),9px 9px 16px rgba(250, 250, 255, 0.6);
@@ -273,7 +273,7 @@
     display: flex;
 }
 .if1{
-    width: 25%;
+    width: 20%;
     height:50vh;
     background-color: whitesmoke;
     box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.6),9px 9px 16px rgba(163, 177, 198, 0.6);
@@ -478,5 +478,37 @@ footer p{
     }
     .about-data{
         flex-direction: column-reverse;
+        background-color: rgb(153 139 139 / 30%);
+        padding: 30px;
+        border-radius: 15px;
+        margin: 30px auto;
+        border-radius: 15px;
+    }
+    .profile-pic{
+        padding: 25px 0;
+    }
+    .experience{
+        flex-direction: column;
+    }
+    #exp-blocks{
+        width: 60%;
+        height: 201vh;
+    }
+    .tag{
+        width: 80%;
+        margin-bottom: 45px;
+    }
+    #certifications{
+        width: 60%;
+    }
+    .certi-box{
+        flex-direction: column;
+    }
+    iframe{
+        margin-bottom: 50px;
+    }
+    .if1{
+        width: 100%;
+        height:15vh;
     }
 }
