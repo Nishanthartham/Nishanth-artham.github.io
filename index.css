@@ -499,10 +499,11 @@ footer p{
         margin-bottom: 45px;
     }
     #certifications{
-        width: 60%;
+        width: 100%;
     }
     .certi-box{
         flex-direction: column;
+        padding: 0;
     }
     iframe{
         margin-bottom: 50px;
@@ -510,5 +511,24 @@ footer p{
     .if1{
         width: 100%;
         height:15vh;
+    }
+    .if2{
+        width: 100%;
+    }
+    #img2{
+        margin-top: 50vh;
+    }
+    .IM .exp-image {
+        margin-top: 10vh;
+    }
+    .edspread .exp-image {
+        margin-top: 35vh;
+    }
+    .social-media {
+        flex-direction: column;
+        height: 25vh;
+    }
+    .footer{
+        height: 60vh;
     }
 }
